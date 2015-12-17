@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 Login
+    p Pleae login below
+    form(action="users/login", method="post")
+        .form-group
+            label Username
+            input.form-control(type="text", name="username", value="", placeholder="Username..")
+        .form-group
+            label Password
+            input.form-control(type="password", name="password", value="", placeholder="Password")
+        input.btn.btn-primary(name="submit", type="submit", value="login")
