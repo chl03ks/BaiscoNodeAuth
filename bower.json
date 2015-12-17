@@ -1,0 +1,16 @@
+{
+  "name": "nodeauth",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Daniel <dan@hectic.io>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gvsdan/BaiscoNodeAuth",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

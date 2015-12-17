@@ -66,7 +66,9 @@ app.use(expressValidator({
 }));
 
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/assets', express.static( __dirname + '/public'));
+app.use('/bower', express.static( __dirname + '/bower_components'));
 //Handle connect-flash
 app.use(flash());
 app.use(function (req, res, next) {

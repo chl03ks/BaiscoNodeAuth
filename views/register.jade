@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1 Register
+    p Pleae register using the form below
+    form(action="users/register", method="post", enttype='multipart/form-data')
+        .form-group
+            label Name
+            input.form-control(type="text", name="name", value="", placeholder="Name..")
+        .form-group
+            label Email
+            input.form-control(type="email", name="email", value="", placeholder="Email..")
+        .form-group
+            label Username
+            input.form-control(type="text", name="username", value="", placeholder="Username..")
+        .form-group
+            label Password
+            input.form-control(type="password", name="password", value="", placeholder="Password")
+        .form-group
+            label Confirm Password
+            input.form-control(type="password", name="password2", value="", placeholder="Confirm")
+        .form-group
+            label Profile Image
+            input.form-control(type="file", name="profileimage", value="", placeholder="")
+        input.btn.btn-primary(name="submit", type="submit", value="register")
+            
+        
+    
