@@ -11,9 +11,6 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var bodyParser = require('body-parser');
 
-var multer = require('multer');
-var upload = multer({ dest: './uploads' });
-
 var flash = require('connect-flash');
 
 var mongo = require('mongodb');
@@ -23,6 +20,9 @@ var db = mongoose.conection;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+
+var multer  = require('multer');
+var upload = multer({ dest: 'uploads/' });
 
 var app = express();
 
