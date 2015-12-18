@@ -10,13 +10,13 @@ block content
     form(action='/users/register', method='post', enctype='multipart/form-data')
         .form-group
             label Name
-            input.form-control(type='text', name='name', value='', placeholder='Name..')
+            input.form-control(type='text', name='name', value=(name ? '#{name}' : ''), placeholder='Name')
         .form-group
             label Email
-            input.form-control(type='email', name='email', value='', placeholder='Email..')
+            input.form-control(type='email', name='email', value=(email ? '#{email}' : ''), placeholder='Email')
         .form-group
             label Username
-            input.form-control(type='text', name='username', value='', placeholder='Username..')
+            input.form-control(type='text', name='username', value=(username ? '#{username}' : ''), placeholder='Username')
         .form-group
             label Password
             input.form-control(type='password', name='password', value='', placeholder='Password')
